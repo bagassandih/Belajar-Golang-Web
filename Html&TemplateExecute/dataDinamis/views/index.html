@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device width, intial scale=1.0">
+	<title>{{ .title}}</title> <!-- ambil dari file handler, variabel data yang di inisiasi dengan map yang keynya title --> 
+</head>
+<body>
+	<div class="text" style="color: red">
+		Saya sedang belajar golang web, ini adalah file HTML </br>
+		{{ .content}} <!-- ambil dari file handler, variabel data yang di inisiasi dengan map yang keynya content--> 
+	</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{{ template "layout" .}} <!-- menempelkan layout -->
+
+{{ define "main" }} <!-- medefinisikan bahwa ini adalah main, yang akan di tempel di layout -->
+
+<div class="text" style="color: red">
+	{{ .text}}: {{ .id}}
+</div>
+
+{{ end }} <!-- akhir dari definisi main -->

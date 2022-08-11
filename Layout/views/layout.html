@@ -1,0 +1,26 @@
+{{ define "layout" }} <!-- mendefinisikan bahwa ini adalah layout yang akan ditempel index, product html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device width, intial scale=1.0">
+	<title>Home</title> <!-- ambil dari file handler, variabel data yang di inisiasi dengan map yang keynya title --> 
+</head>
+<body>
+
+	<div class ="header">
+		Ini adalah header
+	</div>
+
+
+	{{ template "main" .}} <!-- Jika ada template dengan nama main, akan di tempel disini (cek index dan product html) -->
+
+
+	<div class ="footer">
+		Ini adalah footer
+	</div>
+</body>
+</html>
+
+{{ end }}
