@@ -1,0 +1,25 @@
+{{ template "layout" .}} <!-- menempelkan layout -->
+
+{{ define "main" }} <!-- medefinisikan bahwa ini adalah main, yang akan di tempel di layout -->
+
+
+<div class="text" style="color: red">
+	<h3>Mobil tersedia </h3> </br> 
+
+ <!-- LOoping data slice, gunakan titik jika itu menampilkan semuanya, jika hanya beberapa porperti gunakan .(namaproperty) => .ID -->
+{{ range .}} 
+
+	<!-- ambil dari file handler yang di inisiasi di file entity, variabel data yang di inisiasi dengan map yang keynya content--> 
+	Nomor	: {{ .ID}} </br>
+	Nama	: {{ .Name}}</br>
+	Harga	: Rp. {{ .Price}} Juta</br>
+	Stock	: {{ .Stock}} </br>
+	{{ if lt .Stock 2 }} <!-- kondisi if else, lt adalah lessthan atau kurang dari --> 
+	 <b>Tersisa 1 lagi!</b></br>
+	{{ end }} 
+
+</br>
+{{ end }} <!-- akhir dari looping -->
+</div>	
+
+{{ end }} <!-- akhir dari definisi main -->
