@@ -1,0 +1,10 @@
+{{ template "layout" .}} <!-- menempelkan layout -->
+
+{{ define "main"}} <!-- medefinisikan bahwa ini adalah main -->
+
+<div class="text" style="color: red">
+	Saya sedang belajar golang web, ini adalah file HTML </br>
+	{{ .content_isi}} <!-- ambil dari file handler, variabel data yang di inisiasi dengan map yang keynya content--> 
+</div>
+
+{{ end }}  <!-- akhir dari main -->
