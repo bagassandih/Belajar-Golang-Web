@@ -1,0 +1,21 @@
+.header{
+	border 		: 1px solid;
+	padding 	: 5px;
+	box-shadow 	: 5px 10px #888888; 
+}
+
+.footer{
+	border 		: 1px solid;
+	padding 	: 5px;
+	box-shadow 	: 5px 10px #888888; 
+}
+
+.judul{
+	border 		: 1px solid;
+}
+
+.text {
+	color 		: blue;
+	border 		: 1px solid;
+	padding 	: 5px; 
+}
